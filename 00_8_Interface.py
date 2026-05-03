@@ -23,4 +23,4 @@ class Dog(Animal):
         pass
 
 d=Dog()
-print(d.legs_info(1))
+print(d.legs_info())
