@@ -4,8 +4,14 @@ class TrafficLight(Enum):
     RED = 30
     YELLOW = 5
     GREEN = 25
+
     
     
+    def __init__(self, duration):
+        self.traffic_value = duration
+    
+    def get_value(self):
+        return self.traffic_value
 
     def next(self):
         _TrafficTransitions={
@@ -17,7 +23,7 @@ class TrafficLight(Enum):
         return _TrafficTransitions[self]
 
     def display(self):
-        print(f"{self.name} light is on for {self.value} seconds.")
+        print(f"{self.traffic_value} light is on for {self.get_value()} seconds.")
 
 
 current_light = TrafficLight.RED
