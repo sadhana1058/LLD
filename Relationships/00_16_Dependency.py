@@ -15,5 +15,4 @@ if __name__ == "__main__":
 
     printer.print(doc)
 
-    # After print() returns, the printer has no reference to the document.
-    # The document can be garbage collected independently of the printer.				
+   
