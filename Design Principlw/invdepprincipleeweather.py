@@ -1,3 +1,4 @@
+from abc import ABC, abstractmethod
 class WeatherProvider(ABC):
     @abstractmethod
     def fetch_weather(city):
